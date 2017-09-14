@@ -7,7 +7,9 @@ Example usage:
 ```
 
 changePage - the function responsible for handling page updates.
+
 curPage - the current page that you are on.
+
 pageCount - refers to how many pages total that will be paginated.
 
 Made using React V15.6.1
