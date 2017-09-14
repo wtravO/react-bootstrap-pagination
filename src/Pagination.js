@@ -28,6 +28,19 @@ class Pagination extends Component {
         var buttons = [];
         var startNum, endNum;
 
+        // if there's only between (2 -> (step*2) + 1) pages, then no need for the rest.
+        if(this.props.pageCount <= (step*2) + 1)
+        {
+            for(var i = 1; i <= this.props.pageCount; i++)
+            {
+                buttons.push(
+                    <button className={"btn btn-default" + ((this.props.curPage === i)? " active" : "")} key={i} onClick={this.props.changePage}>{i}</button>
+                );
+            }
+
+            return buttons;
+        }
+
         if(this.props.curPage - step < 1)
         {
             startNum = 1;
