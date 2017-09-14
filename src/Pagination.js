@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../vendor/bootstrap/css/bootstrap.css';
+import '../bootstrap.css'; // change to your bootstrap css directory
 
 class Pagination extends Component {
     getPagination()
