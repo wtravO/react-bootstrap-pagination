@@ -67,10 +67,10 @@ class Pagination extends Component {
         }
 
         // pages for curPage - step -> curPage + step
-        for(var i = startNum; i <= endNum; i++)
+        for(var pageNum = startNum; pageNum <= endNum; pageNum++)
         {
             buttons.push(
-                <button className={"btn btn-default" + ((this.props.curPage === i)? " active" : "")} key={i} onClick={this.props.changePage}>{i}</button>
+                <button className={"btn btn-default" + ((this.props.curPage === pageNum)? " active" : "")} key={pageNum} onClick={this.props.changePage}>{pageNum}</button>
             );
         }
 
