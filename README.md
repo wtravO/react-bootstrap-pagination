@@ -6,10 +6,10 @@ Example usage:
 <Pagination changePage={this.changePage} curPage={this.curPage} pageCount={this.pageCount} />
 ```
 
-changePage - the function responsible for handling page updates.
+changePage {function} - the function responsible for handling page updates.
 
-curPage - the current page that you are on.
+curPage {integer} - the current page that you are on.
 
-pageCount - refers to how many pages total that will be paginated.
+pageCount {integer} - refers to how many pages total that will be paginated.
 
 Made using React V15.6.1
